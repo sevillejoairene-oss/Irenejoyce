@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Mobile Image Popup Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+    <!-- jQuery Mobile JS -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+
+</head>
+
+<body>
+    <div data-role="page" id="gallery-page">
+        <!-- Header -->
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="index.html" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left ui-btn-back">Back</a>
+            <h1><i class="ui-icon-camera"></i> Image Gallery</h1>
+        </div>
+
+        <!-- Main Content -->
+        <div role="main" class="ui-content">
+            <h2 class="gallery-title">Popup Image Gallery</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">
+                Click on any thumbnail to view the full-size image
+            </p>
+            
+            <!-- Image 1: Irene -->
+            <div class="thumbnail-container">
+                <a href="#popupirene" data-rel="popup" data-position-to="window" data-transition="fade" class="thumbnail">
+                    <img src="https://scontent.fceb6-4.fna.fbcdn.net/v/t39.30808-6/626853900_895487106354030_8167784311593168974_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEzAUvhcOk1IDy9vUKfcH5rflWdlUlLQqh-VZ2VSUtCqEjljgSSYLVHZmHyG7vRYlNncNsKDFFaQlSouX9T42WZ&_nc_ohc=zjOBDF99WWIQ7kNvwGTDzWJ&_nc_oc=AdlZQ8cPj06qtNs-v9Ttd6P7NyWStzHz1nsDomZUnqKyf-rrsj38VKPm7UzD33axJNQ&_nc_zt=23&_nc_ht=scontent.fceb6-4.fna&_nc_gid=NloVoE8JvlWDf1HMVoWrsQ&oh=00_AfuG9xTPVS850r043JdQA7wg9ucULH8eVVpsOMtvYv6byw&oe=6984BED1" alt="Irene">
+                    <div style="padding: 5px; background: #f5f5f5; font-size: 12px; color: #333;">Irene</div>
+                </a>
+            </div>
+            
+            <!-- Image 2: Anime -->
+            <div class="thumbnail-container">
+                <a href="#popupanime" data-rel="popup" data-position-to="window" data-transition="fade" class="thumbnail">
+                    <img src="https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/586267066_860815036500887_5934197832164867179_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHGKIuVNdVwxGs74-LI29ZL7-lJF2qn-orv6UkXaqf6iogInix8F5O1wpBX_ulNQCitwlffSMYKo0hPNdXCe9Hm&_nc_ohc=oO8j0SHxxnkQ7kNvwHeQwwI&_nc_oc=AdmQvcsHMHlkX-5nnE7MrNLwA-Gf1CmxIChx0KlZkVTFKji4H7ae70NtI6K0mxNemHQ&_nc_zt=23&_nc_ht=scontent.fceb6-1.fna&_nc_gid=IHe5w8OZR786trRV1hPcyg&oh=00_Afv40EjHGKQsRCRGKM6TQ1wHf1KwD35D9ZfIZf5wMvN5IA&oe=6984BC4F" alt="Seven deadly sins">
+                    <div style="padding: 5px; background: #f5f5f5; font-size: 12px; color: #333;">Seven deadly sins</div>
+                </a>
+            </div>
+            
+            <!-- Image 3: Family Picture -->
+            <div class="thumbnail-container">
+                <a href="#popupfampic" data-rel="popup" data-position-to="window" data-transition="fade" class="thumbnail">
+                    <img src="https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/623371303_895486909687383_7009671666842696362_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGruVf6lftAcS2GVqR6cIAotKwlGDNZGIq0rCUYM1kYin6KHGKL6wqOA56vQmmZ1BS0iFZCPehPvWuugyO-GsTq&_nc_ohc=KSGEANilgkgQ7kNvwGNjj-N&_nc_oc=AdnWSedrCAaQsYbRdGmIkXykMth7OupQGjb_FCGjQTY-JRP1-cVO4sXEP_-C6xZLXaY&_nc_zt=23&_nc_ht=scontent.fceb6-1.fna&_nc_gid=oegq9rye6D60F8yNSpM3nw&oh=00_AfsB1BZjVq1FnbhOmObHNbL9YGLRHCcwn-VhXLmKvDM5mA&oe=6984C3F0" alt="Family Picture">
+                    <div style="padding: 5px; background: #f5f5f5; font-size: 12px; color: #333;">Family</div>
+                </a>
+            </div>
+            
+            <!-- Image 4: High School -->
+            <div class="thumbnail-container">
+                <a href="#popuphigh1" data-rel="popup" data-position-to="window" data-transition="fade" class="thumbnail">
+                    <img src="https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/626697154_895487153020692_4563687043122374736_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEjm2vsPqKF3j6LEUY7xKgEIcTjJj0L9AchxOMmPQv0Bz5BYy4SuSDGXd-XeYK1vsyq1a3hhbti8x_GJmuRF5FH&_nc_ohc=gqo87k-7LJYQ7kNvwHS7nfd&_nc_oc=Adn01tiD8BMxr_ZXssMG3Qv62w8qAKxuG1FWkfZ890T9FQtYzsrvN9f3aPrVj6LxnO0&_nc_zt=23&_nc_ht=scontent.fceb6-1.fna&_nc_gid=ubX--PKyPLOVtlS9EyDxUQ&oh=00_AftrWvdaXlxD4PlpumgNrHDtUlPOSS1-oxnaJNKcLV-8wA&oe=6984A2AA" alt="High School">
+                    <div style="padding: 5px; background: #f5f5f5; font-size: 12px; color: #333;">High School</div>
+                </a>
+            </div>
+            
+            <div style="clear: both; margin-top: 30px;">
+                <p style="color: #777; font-size: 13px; text-align: center;">
+                    <i>Tap any image to view it in full size. Press ESC or tap outside to close.</i>
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h4>Mobile Application Development &copy; 2023</h4>
+        </div>
+
+        <!-- Popup 1: Irene -->
+        <div data-role="popup" id="popupirene" class="popup-container" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right ui-btn-close">Close</a>
+            <img class="popup-image" src="https://scontent.fceb6-4.fna.fbcdn.net/v/t39.30808-6/626853900_895487106354030_8167784311593168974_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEzAUvhcOk1IDy9vUKfcH5rflWdlUlLQqh-VZ2VSUtCqEjljgSSYLVHZmHyG7vRYlNncNsKDFFaQlSouX9T42WZ&_nc_ohc=zjOBDF99WWIQ7kNvwGTDzWJ&_nc_oc=AdlZQ8cPj06qtNs-v9Ttd6P7NyWStzHz1nsDomZUnqKyf-rrsj38VKPm7UzD33axJNQ&_nc_zt=23&_nc_ht=scontent.fceb6-4.fna&_nc_gid=E1n1InvFulHsg2Bp6vLc4w&oh=00_Afs0lNbH4puUKFW-BKhRvv6NcGJlJv1l7QowC-b6DeKL-A&oe=6984BED1" alt="Irene Joyce">
+            <div class="image-caption">Irene Joyce Sevillijo</div>
+        </div>
+
+        <!-- Popup 2: Anime -->
+        <div data-role="popup" id="popupanime" class="popup-container" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right ui-btn-close">Close</a>
+            <img class="popup-image" src="https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/586267066_860815036500887_5934197832164867179_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHGKIuVNdVwxGs74-LI29ZL7-lJF2qn-orv6UkXaqf6iogInix8F5O1wpBX_ulNQCitwlffSMYKo0hPNdXCe9Hm&_nc_ohc=oO8j0SHxxnkQ7kNvwHeQwwI&_nc_oc=AdmQvcsHMHlkX-5nnE7MrNLwA-Gf1CmxIChx0KlZkVTFKji4H7ae70NtI6K0mxNemHQ&_nc_zt=23&_nc_ht=scontent.fceb6-1.fna&_nc_gid=IHe5w8OZR786trRV1hPcyg&oh=00_Afv40EjHGKQsRCRGKM6TQ1wHf1KwD35D9ZfIZf5wMvN5IA&oe=6984BC4F" alt="Seven Deadly Sins">
+            <div class="image-caption">Seven Deadly Sins</div>
+        </div>
+
+        <!-- Popup 3: Family Picture -->
+        <div data-role="popup" id="popupfampic" class="popup-container" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right ui-btn-close">Close</a>
+            <img class="popup-image" src="https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/623371303_895486909687383_7009671666842696362_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGruVf6lftAcS2GVqR6cIAotKwlGDNZGIq0rCUYM1kYin6KHGKL6wqOA56vQmmZ1BS0iFZCPehPvWuugyO-GsTq&_nc_ohc=KSGEANilgkgQ7kNvwGNjj-N&_nc_oc=AdnWSedrCAaQsYbRdGmIkXykMth7OupQGjb_FCGjQTY-JRP1-cVO4sXEP_-C6xZLXaY&_nc_zt=23&_nc_ht=scontent.fceb6-1.fna&_nc_gid=oegq9rye6D60F8yNSpM3nw&oh=00_AfsB1BZjVq1FnbhOmObHNbL9YGLRHCcwn-VhXLmKvDM5mA&oe=6984C3F0" alt="Family Picture">
+            <div class="image-caption">Family </div>
+        </div>
+
+        <!-- Popup 4: High School -->
+        <div data-role="popup" id="popuphigh1" class="popup-container" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right ui-btn-close">Close</a>
+            <img class="popup-image" src="https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/626697154_895487153020692_4563687043122374736_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEjm2vsPqKF3j6LEUY7xKgEIcTjJj0L9AchxOMmPQv0Bz5BYy4SuSDGXd-XeYK1vsyq1a3hhbti8x_GJmuRF5FH&_nc_ohc=gqo87k-7LJYQ7kNvwHS7nfd&_nc_oc=Adn01tiD8BMxr_ZXssMG3Qv62w8qAKxuG1FWkfZ890T9FQtYzsrvN9f3aPrVj6LxnO0&_nc_zt=23&_nc_ht=scontent.fceb6-1.fna&_nc_gid=ubX--PKyPLOVtlS9EyDxUQ&oh=00_AftrWvdaXlxD4PlpumgNrHDtUlPOSS1-oxnaJNKcLV-8wA&oe=6984A2AA" alt="High School Memories">
+            <div class="image-caption">High School Days </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize jQuery Mobile
+        $(document).on("pagecreate", "#gallery-page", function() {
+            // Set default page transition
+            $.mobile.defaultPageTransition = "fade";
+            
+            // Enhance popup functionality
+            $(".thumbnail").on("click", function() {
+                // Add active class for visual feedback
+                $(this).parent().addClass("active");
+                
+                // Remove active class after popup closes
+                $(document).on("popupafterclose", function() {
+                    $(".thumbnail-container").removeClass("active");
+                });
+            });
+            
+            // Keyboard navigation support
+            $(document).on("keyup", function(e) {
+                if (e.keyCode === 27) { // ESC key
+                    $(".ui-popup-active").popup("close");
+                }
+            });
+        });
+        
+        // Handle image loading errors
+        $(document).on("pageinit", function() {
+            $(".popup-image").on("error", function() {
+                var altText = $(this).attr("alt") || "Image";
+                $(this).replaceWith(
+                    '<div style="padding: 40px; color: white; text-align: center;">' +
+                    '<p><i class="ui-icon-alert" style="font-size: 48px;"></i></p>' +
+                    '<p>Failed to load: ' + altText + '</p>' +
+                    '<p style="font-size: 12px;">Check the image path: ' + $(this).attr("src") + '</p>' +
+                    '</div>'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
